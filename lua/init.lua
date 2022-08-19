@@ -10,7 +10,7 @@ require'nvim-treesitter.configs'.setup{
 }
 
 require'lspconfig'.gopls.setup {
-	cmd = {"~/go/bin/gopls", "serve"},
+	cmd = {"/home/jarvis/go/bin/gopls", "serve"},
     filetypes = { "go", "gomod", "gowork", "gotmpl" },
     root_dir = require'lspconfig'.util.root_pattern("go.work", "go.mod", ".git"),
 	settings = {
